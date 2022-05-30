@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/menuscript.js">
+    </script>
+    <title>Food-Menu</title>
+    <style>
+        body {
+            background-image: url("image/backg.jpeg");
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h2>==========Choose your favorite menu==========</h2>
+    <table width="40%" id="alignment">
+
+        <tr>
+            <td>Chicken sanduich</td>
+            <td> - </td>
+            <td>70.00</td>
+        </tr>
+        <tr>
+            <td>Egg sanduich</td>
+            <td> - </td>
+            <td>50.00</td>
+        </tr>
+        <tr>
+            <td>Ham sanduich</td>
+            <td> - </td>
+            <td>30.00</td>
+        </tr>
+        <tr>
+            <td>Grilled cheese sanduich </td>
+            <td> - </td>
+            <td>20.00</td>
+        </tr>
+        <tr>
+            <td>Seafood sanduich</td>
+            <td> - </td>
+            <td>70.00</td>
+        </tr>
+    </table>
+
+    <h2>==========Drinks==========</h2>
+    <table width="40%" id="alignment">
+        <tr>
+            <td>Coke</td>
+            <td> - </td>
+            <td>5.00</td>
+        </tr>
+
+        <tr>
+            <td>Sprite</td>
+            <td> - </td>
+            <td>5.00</td>
+        </tr>
+
+        <tr>
+            <td>Frappucino</td>
+            <td> - </td>
+            <td>7.00</td>
+        </tr>
+        <tr>
+            <td>Mocha</td>
+            <td> - </td>
+            <td>7.00</td>
+        </tr>
+        <tr>
+            <td>Fanta</td>
+            <td> - </td>
+            <td>5.00</td>
+        </tr>
+
+    </table>
+
+    <h2>==========Desserts==========</h2>
+    <table width="40%" id="alignment">
+        <tr>
+            <td>Cheesecake</td>
+            <td> - </td>
+            <td>10.00</td>
+        </tr>
+
+        <tr>
+            <td>Apple pie</td>
+            <td> - </td>
+            <td>8.00</td>
+        </tr>
+
+        <tr>
+            <td>Brownies</td>
+            <td> - </td>
+            <td>7.00</td>
+        </tr>
+        <tr>
+            <td>Jello-O</td>
+            <td> - </td>
+            <td>4.00</td>
+        </tr>
+        <tr>
+            <td>Cupcakes</td>
+            <td> - </td>
+            <td>5.00</td>
+        </tr>
+
+    </table>
+
+    <h1>FIT Food - Order Form</h1>
+    <table style="background-color:aquamarine;margin-left: 500px;">
+        <td>Customer name:</td>
+        <td>
+            <input type="text">
+        </td>
+
+
+
+
+        <form name="tblform">
+            <table width="80%" id="alignment">
+                <tr>
+                    <th>Food Item</th>
+                    <th> </th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Item 1:</td>
+                    <td>
+                        <select id="item1">
+                <option value="1">--Select Item--</option> 
+                <option value="Chicken sanduich">Chicken sanduich</option> 
+                <option value="Egg sanduich">Egg sanduich</option> 
+                <option value="Ham sanduich">CHam sanduich</option> 
+                <option value="Grilled cheese sanduich">Grilled cheese sanduich</option> 
+                <option value="Seafood sanduich ">Seafood sanduich</option> 
+                </select>
+                    </td>
+                    <td><input type="number" value="0" id="q1"></td>
+                    <td><input type="text" id="p1"></td>
+                </tr>
+                <tr>
+                    <td>Item 2:</td>
+                    <td>
+                        <select id="item2"> 
+                <option value="1">--Select Item--</option> 
+                <option value="Coke">Coke</option> 
+                <option value="Sprite">Sprite</option> 
+                <option value="Frappucino">Frappucino</option>  
+                <option value="Mocha">Mocha</option>
+                <option value="Fanta ">Fanta </option>  
+                </select>
+                    </td>
+                    <td><input type="number" value="0" id="q2"></td>
+                    <td><input type="text" id="p2"></td>
+                </tr>
+                <tr>
+                    <td>Item 3:</td>
+                    <td><select id="item3">  
+                <option value="1">--Select Item--</option> 
+                <option value="Cheesecake">Cheesecake</option>  
+                <option value="Apple pie">Apple pie</option> 
+                <option value="Brownies">Brownies</option>
+                <option value="Jello-O">Jello-O</option> 
+                <option value="Cupcakes">Cupcakes</option> 
+                </select>
+                    </td>
+                    <td><input type="number" value="0" id="q3"></td>
+                    <td><input type="text" id="p3"></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><input type="submit" class="button" value="Create Bill" onclick=createBill()></td>
+                    <td><input type="reset" class="button" value="Clear"></td>
+                </tr>
+            </table>
+        </form>
+
+        <footer>
+            <p>Aljeda Cepele</p>
+        </footer>
+
+
+
+</body>
+
+</html>
